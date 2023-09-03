@@ -34,7 +34,6 @@ class Book {
   
       const row = document.createElement('tr');
  
- 
       row.innerHTML = `
         <td>${book.title}</td>
         <td>${book.author}</td>
@@ -64,12 +63,7 @@ document.addEventListener("DOMContentLoaded", UI.displayBooks);
 
 document.addEventListener('DOMContentLoaded', () => {
 document.querySelector('#book-form').addEventListener('submit', (e) => 
-document.addEventListener("DOMContentLoaded", UI.displayBooks);
-
-document.addEventListener('DOMContentLoaded', () => {
-document.querySelector('#book-form').addEventListener('submit', (e) => 
   {
-//Prevent real submit
 //Prevent real submit
     e.preventDefault();
     // Get form values
@@ -87,9 +81,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>
     UI.clearFields();
   ;
   });
-}
-)
-
+})
 
 //Event: Remove Book
 
